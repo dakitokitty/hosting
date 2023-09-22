@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <title>Image Carousel</title>
+  </head>
+  <body>
+    
+
+
+  <div class="boxy">
+
+  </div>
+  
+  <div class="button1">
+    
+    <a href="index.html">♥ Home ♥</a>
+
+
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <div class="image-wrapper">
+                <img src="https://64.media.tumblr.com/69ea4f4008e32ef75f0e2fa0e07c209e/6cec3c367f058234-a9/s1280x1920/3078f144a0ab1974ecf52900fb93615af9766391.jpg" alt="Image 1">
+                <div class="image-text">ha-ha - fall rtw 2016</div>
+            </div>
+            <div class="image-wrapper">
+                <img src="https://64.media.tumblr.com/e5a9e5f8435aa074c34796a8e986cac9/9e004461a4a5f683-c1/s540x810/23fabad2a37c829a01a768ce350cf716eb921830.jpg" alt="Image 2">
+                <div class="image-text">jang wonyoung sjsj fall winter collection 2023
+                </div>
+                
+            </div>
+            <div class="image-wrapper">
+                <img src="https://64.media.tumblr.com/7983cd877b372d7f253f6971cd260967/54e79cc4c09adf72-7a/s1280x1920/b6afde2d05fea48937541fe882dbb18f9dbf30c9.jpg" alt="Image 3">
+                <div class="image-text">sandy liang - spring rtw 2024</div>
+            </div>
+            <div class="image-wrapper">
+                <img src="https://64.media.tumblr.com/9a253c9cf87ba98551136b177e917323/c01ddf0c87738d5e-b4/s1280x1920/8daec0507eac53c7b7aa870fe4df008035167446.jpg" alt="Image 4">
+                <div class="image-text">me - Fall RTW 2022</div>
+            </div>
+            <div class="image-wrapper">
+                <img src="https://64.media.tumblr.com/aef80f650806f5d27cedaf14b4a9179c/d88f44050711ed10-ea/s1280x1920/02b83c639c1ed018148bbfd8b3ccf9cf88d22d33.jpg" alt="Image 5">
+                <div class="image-text">Susan Fang - Fall RTW 2021</div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button id="prevButton">Previous</button>
+            <button id="nextButton">Next</button>
+        </div>
+    </div>
+    
+
+
+    
+  
+      <script>
+const prevButton = document.getElementById("prevButton");
+const nextButton = document.getElementById("nextButton");
+const imageWrappers = document.querySelectorAll(".carousel-slide .image-wrapper");
+let currentIndex = 0;
+
+function showImage(index) {
+    for (let i = 0; i < imageWrappers.length; i++) {
+        imageWrappers[i].style.display = "none";
+    }
+    imageWrappers[index].style.display = "block";
+}
+
+prevButton.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + imageWrappers.length) % imageWrappers.length;
+    showImage(currentIndex);
+});
+
+nextButton.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % imageWrappers.length;
+    showImage(currentIndex);
+});
+
+// Mostrar la primera imagen al cargar la página
+showImage(currentIndex);
+
+          
+          
+      </script>
+  </body>
+  </html>

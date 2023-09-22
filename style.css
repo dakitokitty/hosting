@@ -1,0 +1,263 @@
+
+.body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(302, 100%, 64%);
+  
+}
+
+
+.blank {
+  padding: 3%;
+  margin-right: 0%;
+  margin-left: 780px;
+  display: flex;
+  align-items: 100px;
+  background-color: #ffffff;
+  background-size:20%;
+  background-repeat:repeat-x;
+  background-position: 10%;
+  background-image: url(IMG/1.1.webp);
+  background-position-x: 20px;
+ 
+
+
+}
+
+
+
+
+
+.boxy {
+  margin-right: auto;
+  margin-left: 0px;
+  display: flex;
+  align-items: 100px;
+  background-color: #ffedfa;
+  background-repeat:repeat-x;
+  background-position: 0.20%;
+  background-image: url(IMG/banner2.webp);
+  background-position-x: 10px;
+  padding: 20px;
+
+
+}
+
+
+#jumbo.header{
+  padding: 200px;
+  background-image: url(IMG/kingdom.webp);
+  background-size: cover;
+  background-position: 0px;
+  background-repeat:no-repeat;
+}
+
+
+.waviy {
+  position: relative;
+}
+.waviy span {
+  font-size: 110px;
+  margin: 1; /* This should be margin: 100px; to add space around the title */
+  color: #ffffff;
+  letter-spacing: 70px;
+  text-shadow: 4px 4px 6px rgba(28, 27, 27, 0.2);
+  padding-right: 7%;
+  padding-top: 150px;
+  font-family: 'ADLaM Display';
+  display: inline-block;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+/*.header h1 {
+  font-size: 170px;
+  margin: 100; /* This should be margin: 100px; to add space around the title 
+  color: #ffffff;
+  letter-spacing: 100px;
+  text-shadow: 4px 4px 6px rgba(28, 27, 27, 0.2);
+  padding-left: 80px;
+  padding-top: 200px;
+  font-family: 'Times New Roman', Times, serif;
+}*/
+
+
+
+  
+
+.subtitle {
+  font-size: 40px;
+  left: 150px;
+  position:relative;
+  margin-top: 0px;
+  color: #ffffff;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Ubuntu Title", sans-serif;
+}
+
+/* Estilos para los botones */
+.buttons-container {
+  position: absolute; /* Cambiamos la posición a absoluta */
+  top: 4.5%;
+  left: 160px; 
+  align-items: center;
+  margin: 0
+  
+}
+
+.button {
+  position: absolute; /* Cambiamos la posición a absoluta */
+  top: 15px;
+  left: 10px; /* Cambiamos left a 10px para que esté en la esquina izquierda */
+  align-items: center;
+  margin: 0
+
+  
+}
+
+.button a {
+padding: 90px;
+
+}
+.button a {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  appearance: none;
+  background-color: #ff8bcb;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #f8d3f0 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-family: 'ADLaM Display';
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0px;
+  outline: none;
+  padding: 2rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button a:hover {
+  background-color: rgb(255, 93, 174);
+  box-shadow: #ffffff 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button a:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button a {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
+
+
+/* Aplica display: inline-block para alinear horizontalmente */
+.menu ul {
+  list-style: circle;
+  padding: 0;
+  text-align: center; /* Opcional: centra los elementos horizontalmente en el contenedor */
+}
+
+.menu li {
+  display: inline-block; /* Alinea los elementos horizontalmente */
+  margin: 0 30px; /* Espacio horizontal entre elementos */
+}
+
+/* Estilo para los enlaces dentro de los elementos de lista */
+.menu a {
+  text-decoration:wavy;
+  color: #fff3fd;
+  padding: 10px 20px; /* Agrega espacio alrededor del texto */
+  transition: background-color 0.5s;
+}
+
+/* Estilo para los enlaces al pasar el mouse */
+.menu a:hover {
+  background-color: #ff00b3;
+  color: rgb(255, 255, 255);
+}
+
+/* Estilo individual para cada elemento de la lista */
+#Gallery {
+  background-color: #ffc2e7;
+
+
+}
+
+
+
+
+#History {
+  background-color: #ffa3da;
+}
+
+#AboutMe {
+  background-color: #ff96d5;
+}
+
+#MyRoom {
+  background-color: #fc71c4;
+}
+
+.menu .special a:hover::before {
+  content: "";
+  display: block;
+  width: 100px; /* Ancho de la imagen */
+  height: 100px; /* Alto de la imagen */
+  position: absolute;
+  top: 30px; /* Ajusta la posición según sea necesario */
+  left: 10;
+  background-image: url(IMG/raton.gif); /* Ruta de la imagen */
+  background-size: cover;
+
+}
+
+.menu .special1 a:hover::before {
+  content: "";
+  display: block;
+  width: 100px; /* Ancho de la imagen */
+  height: 100px; /* Alto de la imagen */
+  position: absolute;
+  top: 30px; /* Ajusta la posición según sea necesario */
+  left: 10;
+  background-image: url(IMG/raton2.webp); /* Ruta de la imagen */
+  background-size: cover;
+
+}
+
+.menu .special22 a:hover::before {
+  content: "";
+  display: block;
+  width: 100px; /* Ancho de la imagen */
+  height: 100px; /* Alto de la imagen */
+  position: absolute;
+  top: 30px; /* Ajusta la posición según sea necesario */
+  left: 10;
+  background-image: url(IMG/abm.webp); /* Ruta de la imagen */
+  background-size: cover;
+
+}
+

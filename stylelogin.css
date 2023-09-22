@@ -1,0 +1,223 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  .button a {
+    display: block;
+    padding: 12px 28px; /* Aumenta el relleno para hacer los botones más grandes */
+    background-color: #ae3668;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+  }
+  /* Estilos para el título */
+  .title {
+    margin-right: auto;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    background-image: eye;
+  
+  }
+  
+  .left-title {
+    margin-right: 20px; /* Ajusta el espacio entre el título y el hr */
+    background-color: #ff0f8f;
+  }
+
+  .title h1 {
+    font-size: 30px;
+    color: #000100;
+    margin: 45px;
+    font-family: "Ubuntu Title", sans-serif;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 30px;
+    padding-top: 100px;
+    padding-left: 200px;
+    background-image: url(/IMG/cute.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #jumbo.header{
+    background-image: url(IMG/sakura.gif);
+    background-size: 80%;
+    background-position: 50%;
+    padding-left: 40px;
+    padding-top: 300px;
+  }
+  .header h1 {
+    font-size: 30px;
+    margin: 300;
+    padding-left: 4.5%;
+    color: #000000;
+    letter-spacing: 10px;
+    text-shadow: 4px 4px 6px rgba(28, 27, 27, 0.2);
+    font-family:'Times New Roman', Times, serif
+    
+  }
+  
+  .subtitle {
+    font-size: 90px;
+    margin-top: 20px;
+    color: #000000;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    font-family: "Ubuntu Title", sans-serif;
+  }
+  
+  /* Estilos para los botones */
+  .buttons-container {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .button {
+    margin: 0 10px;
+  }
+  
+  .button a {
+    display: block;
+    padding: 5px 10px; /* Make the button smaller by reducing padding */
+    background-color: #ffbed9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px; /* Make the font size smaller */
+    position: absolute; /* Position the button absolutely */
+    right: 10%; /* Align the button to the right */
+    top: 7%; /* Align the button to the top */
+}
+
+.register{
+    padding: 10px 20px; /* Ajusta el padding para cambiar el tamaño del botón */
+    background-color: #ffbcff; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el ratón */
+    font-size: 16px; /* Tamaño de fuente */
+    
+    /* Centra horizontalmente el contenido del botón */
+    display: block;
+    margin: 0 auto;
+}
+.register :hover {
+    background-color: #3492f6;
+}
+
+
+  .button a:hover {
+    background-color: #ff7eb9;
+  }
+  
+  @media (max-width: 768px) {
+    .buttons-container {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+        display: block;
+    }
+  }
+  
+  /* Estilos para el contenedor de botones */
+  .BOTONES {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0;
+    font-size: 100px;
+  }
+  
+  .BOTONES {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  
+  h2 {
+    font-size: 36px;
+    margin-top: 20px;
+    color: #ffbefb; /* Blue color for the title */
+    font-family: 'Times New Roman', Times, serif
+}
+
+form {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #ffbee8; /* Background color for the form */
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for the form */
+    width: 300px; /* Set the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+label {
+    font-size: 18px;
+    color: #ffffff; /* Dark gray color for labels */
+    font-family: 'Arial', sans-serif; /* Change font family for labels */
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif; /* Change font family for input fields */
+}
+
+input[type="submit"] {
+    background-color: #fed2ff;
+    color: #ffffff; /* White color for the submit button text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif; /* Change font family for the submit button */
+}
+
+input[type="submit"]:hover {
+    background-color: #990075; /* Darker blue color on hover */
+}
+
+.custom-audio-player {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #ffd5f4;
+    border-radius: 30px;
+    padding: 20px;
+    width: 500px;
+    margin: -600px auto 0; /* Centrar horizontalmente */
+   
+}
+
+.custom-play-button {
+    background-color: #ff0f8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.custom-play-button:hover {
+    background-color: #ffa6f8;
+}
